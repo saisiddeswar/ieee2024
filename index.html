@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta charset="UTF-8">
     <title>IEEE RVRJC</title>
 
@@ -56,7 +57,7 @@
         </div>
     </div>
 
-    <section>
+    <section id="vission-mission">
 
         <div class="banner-section">
             <div class="who-are-we mt-2" style="margin-left: 10%;">
@@ -107,7 +108,7 @@
     </section>
 
 
-    <section style="margin-top: 100px;" id="vision-mission-page">
+    <section id="whatisieee-soc">
         <div class="content-tile123">
             <div class="content-wrap123">
                 <div class="content12">
@@ -191,7 +192,8 @@
                     <div href="event1.html" class="event-link">
                         <div class="event">
                             <div>
-                                <img src="X_logo_2023_original.png" alt="Event 1" style="height: 100px;width: 500px;">
+                                <img src="X_logo_2023_original.png" alt="Event 1" style="height: 100px;width: 500px;"
+                                    class="carsouel-image">
                             </div>
                             <div class="event-description">
                                 <h2>Seminar | Turning Ideas into Investments</h2>
@@ -271,8 +273,7 @@
             <!-- Image Section -->
             <div class="col-md-6 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0 the-images-footer">
                 <div>
-                    <img src="brand lockup.png" alt="Footer Image" class="img-fluid"
-                        style="width: 400px; height: 100px; margin-top: 6.5%;">
+                    <img src="brand lockup.png" alt="Footer Image" class="img-fluid" />
                 </div>
                 <div class="three-social">
                     <div><img src='Instagram_logo.png' class="social-media-links" /></div>
@@ -356,38 +357,14 @@
         padding: 0;
     }
 
-    #vision-mission-page {
-        background: url(jigjag.jpg) no-repeat center center;
-        /* Use your desired background image */
-        background-size: cover;
-        padding: 50px 20px;
-        /* Add padding to ensure content stays within the background */
-        margin-bottom: 100px;
-        /* Add margin to prevent overlapping with the next section */
-        position: relative;
-        z-index: 1;
-    }
-
-    #vision-mission-page .content-tile123 {
-        background-color: rgba(255, 255, 255, 0.9);
-        /* Slightly transparent background for content */
-        border-radius: 15px;
-        padding: 20px;
-    }
-
-    @media (max-width: 768px) {
-        #vision-mission-page {
-            padding: 30px 10px;
-            /* Adjust padding for smaller screens */
-        }
-
-        #vision-mission-page .content-tile123 {
-            padding: 15px;
-        }
-    }
-
     .copyright-down {
         background-color: #00629B;
+    }
+
+    .img-fluid {
+        width: 400px;
+        height: 100px;
+        margin-top: 6.5%;
     }
 
     .thetopbutton {
@@ -397,6 +374,66 @@
         bottom: 20px;
         right: 20px;
         z-index: 1000;
+    }
+
+    @media (max-width: 399px) {
+        .heading_h1 {
+            font-size: 2rem;
+        }
+
+        .carousel-inner {
+            height: 500px;
+
+        }
+
+        .carousel-description h2 {
+            font-size: 10px;
+        }
+
+        .who-are-we h1,
+        .vission h1,
+        .mission h1 {
+            font-size: 1.5rem;
+        }
+
+        .who-are-we p,
+        .vission p,
+        .mission p {
+            font-size: 0.9rem;
+        }
+
+        .carousel-image {
+            width: 40px;
+            height: 40px;
+        }
+
+        .banner-image {
+            height: 50vh;
+            width: 100vh;
+
+        }
+
+        .img-fluid {
+            width: 300px;
+            height: 100px;
+            margin-right: 60px;
+        }
+
+        .event-description {
+            padding: 10px;
+        }
+
+        .carousel {
+            height: 400px;
+            margin-bottom: 50px;
+        }
+
+        .footer123 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
     }
 
     .thetopbutton.show {
@@ -414,6 +451,18 @@
         font-family: 'Garet', sans-serif;
         font-size: 16pt;
         color: black;
+    }
+
+    @media (max-width: 399px) {
+        .content-wrap123 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .banner-section {
+            height: 200vh;
+            overflow: scroll;
+        }
     }
 
     .background-location {
@@ -572,11 +621,9 @@
     .event-container {
         flex-wrap: wrap;
         justify-content: center;
-
         text-align: center;
         width: 100%;
         display: flex;
-        flex-direction: row;
     }
 
     /* Event Link Styling */
@@ -586,8 +633,8 @@
         width: 70%;
         margin: 70px;
         display: flex;
-        flex-direction: row;
         border: 2px solid black;
+        flex-direction: row;
 
         /* Limit the width for better centering */
     }
@@ -822,21 +869,6 @@
         font-size: 3rem;
         font-weight: bold;
         z-index: 1000;
-    }
-
-    @media (max-width: 1300px) {
-        .heading_h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-40%, -10%);
-            text-align: center;
-            color: #F7F7F8;
-            font-family: 'TT Norms', sans-serif;
-            font-size: 3rem;
-            font-weight: bold;
-            z-index: 1000;
-        }
     }
 
     .kite-logo-container {
@@ -1207,7 +1239,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .logo {
