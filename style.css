@@ -1,0 +1,305 @@
+body {
+    background-color: #F7F7F8;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.main-con {
+    position: relative;
+}
+
+.banner-image {
+    margin-top: 10px;
+    width: 96%;
+    height: 75vh;
+    object-fit: cover;
+    position: relative;
+    margin-left: 40px;
+    border-radius: 30px;
+    display: block;
+    margin-right: auto;
+}
+
+.navbar {
+    position: fixed;
+    top: 15px;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    z-index: 1001;
+    border: 2px solid #00629B;
+    border-radius: 30px;
+    transition: border-radius 1s ease-in-out, width 1s ease-in-out;
+}
+
+.logo123 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-menu li {
+    margin: 20px 0;
+}
+
+.mobile-menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.heading_h1 h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+}
+
+.kite-logo-container {
+    margin-left: 10px;
+    top: 40%;
+}
+
+.kite-logo {
+    margin-top: -10px;
+    max-width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+.content123 {
+    text-align: center;
+    padding: 20px;
+}
+
+.button-joinus {
+    padding: 10px 20px;
+    background-color: #00629B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home-matter {
+    font-size: 20px;
+    color: black;
+    margin-top: 10px;
+}
+
+.banner-section {
+    background-color: #F7F7F8;
+    padding: 20px;
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.banner-section h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.banner-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.who-are-we,
+.vission,
+.mission {
+    margin-top: 60px;
+}
+
+.content-tile123 {
+    text-align: center;
+    padding: 20px;
+}
+
+.content-wrap123 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin-right: 40px;
+}
+
+.heading123 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.content {
+    font-size: 18px;
+    color: black;
+    margin-right: 10px;
+}
+
+.visit-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #00629B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.visit-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.our-societies {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.society-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.society-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 100px;
+    margin: 0 15px;
+}
+
+.society-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .kite-logo-container {
+        display: none;
+    }
+
+    .banner-image {
+        margin-left: auto;
+        width: 100%;
+        height: 60vh;
+    }
+
+    .heading_h1 h1 {
+        top: 40%;
+        font-size: 35px;
+    }
+
+    .society-box {
+        flex-direction: column;
+    }
+
+    .society-logo {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .logo-container {
+        justify-content: space-around;
+    }
+
+    .society-logo img {
+        object-fit: contain;
+    }
+}

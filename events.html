@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE Events</title>
+    <script src="./JS/tailwind.js"></script>
+    <script src="./JS/script.js" defer></script>
+    <link rel="shortcut icon" href="./Assets/rjenestlogo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./CSS/aos.css" rel="stylesheet">
+    <script src="./JS/aos.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Cedarville+Cursive&family=Poppins&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    .events {
+        background-position: center;
+        background-size: cover;
+        /* Ensures background covers the entire container */
+        background-repeat: no-repeat;
+    }
+
+    /* Hover Effect for Images */
+    .hover-effect {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .hover-effect:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Heading Styling */
+    h1 {
+        font-size: 2.5rem;
+        /* Increased font size for the heading */
+    }
+
+    /* Centered Text with Justification */
+    .text-center {
+        font-size: 1.25rem;
+        /* Adjust this value to make the text larger */
+        text-align: justify;
+        /* Justifies the content */
+    }
+
+    /* Hover Effect for Event Links */
+    .hover-effect {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .hover-effect:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Image Shadow Effect */
+    .img-rule {
+        filter: drop-shadow(2px 2px 20px cyan);
+    }
+
+    .img-fluid {
+        margin-left: 100px;
+
+    }
+
+    /* Event Container Styling */
+    .event-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        /* Space between events */
+    }
+
+    /* Event Link Styling */
+    .event-link {
+        text-decoration: none;
+        /* Remove underline */
+        color: inherit;
+        /* Keep text color consistent */
+        flex: 1 1 calc(33.333% - 20px);
+        /* Three columns on large screens */
+        box-sizing: border-box;
+        /* Ensure padding and borders are included in the width */
+    }
+
+    /* Individual Event Styling */
+    .event {
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .event img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .event-description {
+        padding: 15px;
+    }
+
+    .event h3 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #333;
+    }
+
+    .event p {
+        margin-top: 10px;
+        color: #666;
+    }
+
+    /* Hover Effect on Event Links */
+    .event-link:hover .event {
+        transform: scale(1.05);
+        /* Slight zoom effect on hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive Design for Different Screen Sizes */
+
+    /* For Tablets and Smaller Screens */
+    @media (max-width: 992px) {
+        .event-link {
+            flex: 1 1 calc(50% - 20px);
+            /* Two columns on tablets */
+        }
+
+        h1 {
+            font-size: 2rem;
+            /* Adjust heading size */
+        }
+
+        .text-center {
+            font-size: 1.1rem;
+            /* Adjust text size */
+        }
+    }
+
+    /* For Mobile Screens */
+    @media (max-width: 576px) {
+        .event-link {
+            flex: 1 1 100%;
+            /* One column on mobile devices */
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            /* Further reduce heading size */
+        }
+
+        .text-center {
+            font-size: 1rem;
+            /* Further adjust text size */
+        }
+
+        .event-container {
+            gap: 10px;
+            /* Reduce gap between events */
+        }
+
+        .event-description {
+            padding: 10px;
+            /* Reduce padding */
+        }
+    }
+
+
+    .card {
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+<body class="h-[100vh] scroll-bar-remove" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+
+    <h1 style="text-align: center; font-size: 50px; padding-top: 150px;">Events Organised by IEEE Student Branch</h1>
+    <h1>Events Uploading soon..........</h1>
+</body>
+
+</html>
