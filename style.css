@@ -25,6 +25,17 @@
     }
 
     @media (max-width: 399px) {
+     .content-wrap123 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .banner-section {
+            height: 200vh;
+            overflow: scroll;
+        }
+
+   
         .heading_h1 {
             font-size: 5rem;
             transform: translate(-10%, 10%);
@@ -101,22 +112,6 @@
         font-family: 'Garet', sans-serif;
         font-size: 16pt;
         color: black;
-    }
-
-    @media (max-width: 399px) {
-        .content-wrap123 {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .banner-section {
-            height: 200vh;
-            overflow: scroll;
-        }
-
-        .heading_h1 {
-            transform: translate(-50%, 50%);
-        }
     }
 
     .background-location {
