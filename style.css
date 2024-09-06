@@ -35,10 +35,13 @@
             overflow: scroll;
         }
 
-   
+   .ieee_rvrjc{
+    font-size:40px;
+    
+   }
         .heading_h1 {
             font-size: 40px;
-            transform: translate(-10%, 70%);
+    
 
         }
 
